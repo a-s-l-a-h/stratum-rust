@@ -1,0 +1,3 @@
+[submodule "stratum-sys"]
+	path = stratum-sys
+	url = https://github.com/a-s-l-a-h/stratum-sys.git
