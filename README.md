@@ -1,7 +1,9 @@
 # stratum-rust
+---
 
-Try the demo : https://github.com/a-s-l-a-h/stratumrustdemo/releases/tag/v0_01-tag
+If you'd like to try it out quickly ( A Demo Project ): https://github.com/a-s-l-a-h/stratumrustdemo/releases/tag/v0_01-tag
 
+---
 
 Write Android apps in **Rust** against the real Android SDK. `stratum-rust` is the Rust target built on [**stratum-sys**](https://github.com/a-s-l-a-h/stratum-sys) (the base Stratum project, included here as the `stratum-sys/` submodule). It turns the output of stratum-sys (class metadata + C engine) into
 
