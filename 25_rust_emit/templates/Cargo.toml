@@ -1,0 +1,13 @@
+[package]
+name = "stratum"
+version = "0.1.0"
+edition = "2021"
+description = "Stratum Rust SDK (auto-generated Android bindings over the Stratum C ABI)"
+
+[features]
+default = ["auto-init"]
+auto-init = []          # run init() from .init_array when the library loads (best effort; stratum_main! calls init() anyway)
+skip-hash-check = []    # do not compare libstratum.so's meta hash with this crate's
+
+[lib]
+crate-type = ["rlib"]

@@ -1,0 +1,31 @@
+# ── stratum-rust (generator repo) ─────────────────────────────────────────────
+# stratum-sys/ is a git submodule with its own .gitignore: do NOT ignore it here.
+
+# Generator output (re-created by build_all.py)
+25_rust_emit/output/
+output/
+
+# Pipeline build cache (downloads, JDK, android.jar, stage outputs)
+build/
+stratum-sys/build/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Partial / verification files from the downloader
+*.part
+*.ok
+
+# Dumps made for sharing code with LLMs
+fullcode/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db

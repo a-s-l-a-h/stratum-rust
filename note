@@ -1,0 +1,5 @@
+python 25_rust_emit/main.py --input "stratum-sys/build/API_35/05_resolve/output_patched" --output "25_rust_emit/output/crate" --engine "stratum-sys/20_engine_core"
+
+
+
+python 25_rust_emit/package.py --input "25_rust_emit/output/crate" --engine "stratum-sys/20_engine_core" --generated "stratum-sys/build/API_35/20_engine_core/generated" --runtime "stratum-sys/runtime" --adapters "stratum-sys/build/API_35/05_5_abstract/output/java/com/stratum/adapters" --output "25_rust_emit/output/stratum" --api-version 35 --min-sdk 24 --java-version 11

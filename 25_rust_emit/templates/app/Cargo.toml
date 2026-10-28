@@ -1,0 +1,20 @@
+[package]
+name = "myapp"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "myapp"               # -> libmyapp.so, must equal System.loadLibrary("myapp")
+crate-type = ["cdylib"]
+
+[dependencies]
+stratum = { path = "stratum" }
+
+# Profiles of dependencies are ignored, so they live HERE. They let the #[inline] wrappers collapse
+# into direct calls of the C ABI. Do NOT use panic = "abort": callbacks rely on catch_unwind.
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+
+[workspace]                  # keeps cargo from picking up a parent workspace
